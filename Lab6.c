@@ -15,7 +15,7 @@ int main(void)
 									  //pin PC5 set as input for potentiometer
 	PORTC = 0b00011111; //setting output of PORTC high to turn off LEDs (assuming wired as active low)
 	
-	DDRD = 0b00100000; //data register, pin PD 5 set as output (PWM pin)
+	DDRD = 0b01000000; //data register, pin PD6 set as output (PWM OC0A pin)
 	
 	DDRB = 0b00000110; //data register, setting PB1 & PB2 as output (Motor Direction Pins)
 	
